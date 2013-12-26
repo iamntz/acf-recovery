@@ -15,7 +15,8 @@ ThemeDirectory\acf-export-recover\*
 ```
 
 #### Set Up
-1. In your `functions.php` file include the `recover.php`
-2. Access admin with `?recover-acf-fields=1` added in your URL.
-3. Do not reload this page, otherwise you will have duplicates
+1. In your `functions.php` file include the `recover.php`;
+2. Access admin with `?recover-acf-fields=1` added in your URL;
+3. Do not reload this page, otherwise you will have duplicates;
+4. Remove `recover.php` from `functions.php`;
 4. Enjoy!
