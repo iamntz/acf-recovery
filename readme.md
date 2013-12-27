@@ -11,7 +11,7 @@ So basically you will have a structure like this:
 ThemeDirectory
 ThemeDirectory\functions.php
 ThemeDirectory\acf_export.php
-ThemeDirectory\acf-export-recover\*
+ThemeDirectory\acf-recovery\*
 ```
 
 #### Set Up
@@ -20,3 +20,17 @@ ThemeDirectory\acf-export-recover\*
 3. Do not reload this page, otherwise you will have duplicates;
 4. Remove `recover.php` from `functions.php`;
 4. Enjoy!
+
+
+#### Extra tweaking
+You can change default entry status (which is _draft_) and entry title suffix (which is _(recover)_ ) by adding these two filters in your `functions.php` file:
+
+```php
+add_filter( 'acf/import/post_status', function(){ return "publish"; } );
+add_filter( 'acf/import/title_suffix', function(){ return ""; } );
+```
+
+
+#### Resources
+1. [ACF Recovery](https://github.com/seamusleahy/ACF-PHP-Recovery) (works only with ACF 3)
+2. [Lost many fields after import.](http://support.advancedcustomfields.com/forums/topic/lost-many-fields-after-import/)
