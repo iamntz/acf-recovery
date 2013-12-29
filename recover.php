@@ -1,6 +1,6 @@
 <?php
 if( isset( $_GET['recover-acf-fields'] ) ){
-  require_once( plugin_dir_path(__FILE__) . '../acf_export.php' );
+  require_once( plugin_dir_path(__FILE__) . '../acf_export_recover.php' );
   die();
 }
 
