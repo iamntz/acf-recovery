@@ -1,6 +1,7 @@
 ### How To easily recover ACF fields from exported PHP file
 
 #### Prerequisites
+1. ACF (and all ACF extensions) should be loaded from `functions.php`, _before_ acf-recover. **Do not try to use ACF as a plugin, otherwise this utility won't play nice.**
 1. Clone this repo on it's own folder, right into theme directory. The name is not important as long as it have it's own folder.
 2. Have your exported fields as `acf_export_recover.php` located one level upper than this script.
 3. Edit `acf_export_recover.php` and replace all instances of `register_field_group` with `re_register_field_group`.
