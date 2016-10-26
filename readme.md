@@ -5,6 +5,7 @@
 1. Clone this repo on it's own folder, right into theme directory. The name is not important as long as it have it's own folder.
 2. Have your exported fields as `acf_export_recover.php` located one level upper than this script.
 3. Edit `acf_export_recover.php` and replace all instances of `register_field_group` with `re_register_field_group`.
+4. This utility assumes you have **ACF 4.x**. For ACF 5.x, please take a look at [this utility](https://github.com/BeAPI/ACF-PHP-Recovery)
 
 So basically you will have a structure like this:
 
